@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
+    <title>Le Groupe Renault, constructeur automobile – Site officiel</title>
+    <style>
+      /* Début - Règles communes à tous les écrans */
+      /* @media screen and (max-width: 768px) {} */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #fff;
+      }
+      header,
+      main,
+      section,
+      footer {
+        margin: 1vh 1vw;
+      }
+      main,
+      section {
+        background-color: #f0f0ef;
+      }
+      main > * {
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+      }
+      .details > * {
+        padding: 1vh 1vw;
+      }
+      footer {
+        background-color: #1b1b1b;
+        color: #fff;
+      }
+
+      a {
+        text-decoration: none;
+      }
+      nav a,
+      nav a:visited {
+        color: #666666;
+      }
+      nav a:hover {
+        color: #000;
+      }
+      footer a,
+      footer a:visited {
+        color: #999999;
+      }
+      footer a:hover {
+        color: #fff;
+      }
+      h2 {
+        text-transform: uppercase;
+        font-size: 1.2em;
+      }
+      .yellow {
+        background-color: yellow;
+        color: #000;
+      }
+      .btn {
+        border: 1px solid white;
+        padding: 0.2em;
+        cursor: pointer;
+      }
+      img {
+        max-width: 100%;
+        min-width: 100%;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      article a {
+        color: #000;
+      }
+      .date {
+        color: #bbbcbc;
+      }
+      header ul,
+      header > div {
+        text-align: center;
+      }
+      header > * {
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+      }
+      nav li a {
+        display: inline-block;
+        width: 100%;
+        border: 1px solid #999999;
+        padding: 0.1em;
+        margin: 0.2em;
+      }
+      footer {
+        text-align: center;
+      }
+      main h2,
+      section > h2 {
+        text-align: center;
+      }
+      .details > .btn {
+        display: block;
+        width: 25vw;
+        margin: 1vh auto;
+        text-align: center;
+      }
+      /* Fin - Règles communes à tous les écrans */
+
+      @media screen and (min-width: 769px) and (max-width: 992px) {
+        nav ul li {
+          display: inline;
+        }
+        nav ul li a {
+          display: inline;
+          border: none;
+        }
+      }
+      @media screen and (min-width: 993px) {
+        header,
+        main,
+        section {
+          display: flex;
+          align-items: center;
+        }
+        header > * {
+          flex-basis: 0em;
+        }
+        header > h1 {
+          flex-grow: 2;
+        }
+        header > nav {
+          flex-grow: 5;
+        }
+        header > div {
+          flex-grow: 3;
+        }
+        nav ul li {
+          display: inline;
+        }
+        nav ul li a {
+          display: inline;
+          border: none;
+        }
+        section {
+          align-items: center;
+          flex-wrap: wrap;
+        }
+        section > * {
+          flex: 1 1 0em;
+        }
+        section > :first-child {
+          flex: 1 1 100%;
+        }
+        section img {
+          height: 60vh;
+        }
+        main > * {
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1><img src="images/logo.svg" alt="Groupe Renault" /></h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Page d'accueil</a></li>
+          <li><a href="#">Nos missions</a></li>
+          <li><a href="contact-form.html">Formulaire de contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <form action="res.html">
+          <input
+            type="search"
+            name="search"
+            id="search_field"
+            placeholder="Rechercher"
+          />
+          <input
+            type="submit"
+            id="submit_btn"
+            value="Rechercher"
+            class="yellow btn"
+            autofocus
+          />
+        </form>
+      </div>
+    </header>
+    <main>
+      <div class="details">
+        <h2>Megane Evision</h2>
+        <p>UN DESIGN AU SERVICE DE L’EFFICIENCE ET DE L’ÉMOTION</p>
+        <a href="#" class="yellow btn">Lire le billet de blog</a>
+      </div>
+      <div>
+        <img src="images/megane-evision_1.jpg" alt="megane evision" />
+      </div>
+    </main>
+    <section>
+      <h2>DÉCOUVREZ NOTRE ACTUALITÉ</h2>
+      <article>
+        <a href="#">
+          <figure>
+            <img src="images/autre-cercle-v2.png" alt="" />
+            <figcaption>
+              <h2>
+                DIVERSITÉ ET INCLUSION : L’AUTRE CERCLE DISTINGUE DEUX LAURÉATS
+                AU SEIN DU GROUPE RENAULT
+              </h2>
+              <div class="date">06 novembre 2020</div>
+            </figcaption>
+          </figure>
+        </a>
+      </article>
+      <article>
+        <a href="#">
+          <figure>
+            <img
+              src="images/essais-captur-e-tech-plug-in-hybrid-1.png"
+              alt=""
+            />
+            <figcaption>
+              <h2>
+                ESSAI DU RENAULT CAPTUR E-TECH PLUG-IN HYBRID PAR LAURENT
+                HURGON, PILOTE RENAULT SPORT
+              </h2>
+              <div class="date">21 octobre 2020</div>
+            </figcaption>
+          </figure>
+        </a>
+      </article>
+    </section>
+    <footer>
+      <div>&copy; Groupe Renault 2020</div>
+    </footer>
+  </body>
+</html>
